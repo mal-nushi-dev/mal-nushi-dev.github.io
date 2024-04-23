@@ -3,8 +3,9 @@ body {
     color: black;
     background-color: #FFF9ED;
     font-size: 30px;
-    padding-top: 10px;
     padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
     text-align: center;;
 }
 
@@ -16,4 +17,21 @@ body {
 
 .nav_container a:hover {
     color: blue;
+}
+
+.header_logo {
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.header_subheader {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: rgb(62, 0, 0);
+}
+
+.return_home {
+    margin-top: 5px;
+    font-size: 15px;
 }
