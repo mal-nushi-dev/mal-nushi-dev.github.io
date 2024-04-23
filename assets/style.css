@@ -2,4 +2,18 @@ body {
     font-family: monospace;
     color: black;
     background-color: #FFF9ED;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 25px;
+    text-align: center;;
+}
+
+.nav_container a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav_container a:hover {
+    color: blue;
 }
