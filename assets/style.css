@@ -3,10 +3,10 @@ body, html {
     -webkit-margin-after: 0;
     -webkit-padding-start: 0;
     -webkit-padding-end: 0;
+    -webkit-text-size-adjust: none;
 }
 
 body {
-    -webkit-text-size-adjust: none;
     font-family: monospace;
     color: black;
     background-color: #FFF9ED;
@@ -60,4 +60,12 @@ body {
 
 .main_content {
     font-size: 15px;
+}
+
+footer {
+    position: absolute;
+    font-size: 10px;;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
