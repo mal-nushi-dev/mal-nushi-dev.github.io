@@ -14,26 +14,17 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
-    text-align: center;;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-.nav_container a {
+a {
     text-decoration: none;
     color: gray;
     transition: color 0.3s ease-in-out;
 }
 
-.nav_container a:hover {
-    color: blue;
-}
-
-.main_content a {
-    text-decoration: none;
-    color: gray;
-    transition: color 0.3s ease-in-out;
-}
-
-.main_content a:hover {
+a:hover {
     color: blue;
 }
 
@@ -62,10 +53,34 @@ body {
     font-size: 15px;
 }
 
-footer {
+.about_me_photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+}
+
+.about_body {
+    font-size: 15px;
+    padding: 0px 20px;
+}
+
+.about_body h3 {
+    text-align: center;
+}
+
+.about_body_paragraphs {
+    text-align: left;
+}
+
+/* footer {
+    flex-shrink: 0;
     position: absolute;
-    font-size: 10px;;
+    font-size: 10px;
     bottom: 0;
     left: 0;
     right: 0;
-}
+} */
+
