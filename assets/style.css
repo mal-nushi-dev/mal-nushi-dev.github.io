@@ -4,6 +4,7 @@ body, html {
     -webkit-padding-start: 0;
     -webkit-padding-end: 0;
     -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
