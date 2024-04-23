@@ -1,4 +1,12 @@
+body, html {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+}
+
 body {
+    -webkit-text-size-adjust: none;
     font-family: monospace;
     color: black;
     background-color: #FFF9ED;
@@ -19,6 +27,16 @@ body {
     color: blue;
 }
 
+.main_content a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
+
+.main_content a:hover {
+    color: blue;
+}
+
 .header_logo {
     padding: 0;
     margin-bottom: 5px;
@@ -31,7 +49,15 @@ body {
     color: rgb(62, 0, 0);
 }
 
+.main_header {
+    font-size: 35px;
+}
+
 .return_home {
     margin-top: 5px;
+    font-size: 15px;
+}
+
+.main_content {
     font-size: 15px;
 }
