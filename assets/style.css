@@ -8,9 +8,10 @@ body, html {
 }
 
 body {
-    font-family: monospace;
-    color: black;
-    background-color: #FFF9ED;
+    font-family: "Gilda Display", serif;
+    text-transform: ;
+    color: #143028;
+    background-color: #d2ccc5;
     font-size: 30px;
     padding-left: 25px;
     padding-right: 25px;
@@ -21,12 +22,12 @@ body {
 
 a {
     text-decoration: none;
-    color: gray;
+    color: #143028;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: blue;
+    color: #e4f6fe;
 }
 
 .header_logo {
@@ -38,7 +39,7 @@ a:hover {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 35px;
-    color: rgb(62, 0, 0);
+    color: #143028;
 }
 
 .main_header {
@@ -64,7 +65,7 @@ a:hover {
 }
 
 .about_body {
-    font-size: 15px;
+    font-size: 20px;
     padding: 0px 20px;
 }
 
