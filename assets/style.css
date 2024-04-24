@@ -12,7 +12,6 @@ html {
 
 body {
     font-family: "Gilda Display", serif;
-    text-transform: ;
     color: #143028;
     background-color: #d2ccc5;
     font-size: 30px;
@@ -68,7 +67,7 @@ a:hover {
 }
 
 .about_body {
-    font-size: 20px;
+    font-size: 30px;
     padding: 0px 20px;
 }
 
@@ -76,8 +75,18 @@ a:hover {
     text-align: center;
 }
 
-.about_body_paragraphs {
+.about_body ul {
+    list-style-position: inside;
     text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* creates two equal-width columns */
+    grid-gap: 20px; /* adds some space between the grid items */
+}
+
+
+
+.about_body_paragraphs {
+    text-align: center;
 }
 
 .button {
