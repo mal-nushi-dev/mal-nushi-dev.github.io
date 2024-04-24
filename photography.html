@@ -16,36 +16,37 @@
         <hr>
     </header>
     <main>
-        <p>As a photography enthusiast, I enjoy capturing the world through the lens of my iPhone, focusing on the beauty of mundane scenes and architectural details. My hobby involves exploring and appreciating the ordinary, finding unique perspectives in everyday settings. This passion allows me to creatively document the subtle interplay of light, texture, and form in the environments around me.</p>
-        <a href="https://www.instagram.com/malspixelempire?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><button type="button" class="button">INSTAGRAM</button></a>
-    
+        <p>As a photography enthusiast, I enjoy capturing the world through the lens of my iPhone, focusing on the
+            beauty of mundane scenes and architectural details. My hobby involves exploring and appreciating the
+            ordinary, finding unique perspectives in everyday settings. This passion allows me to creatively document
+            the subtle interplay of light, texture, and form in the environments around me.</p>
+        <a href="https://www.instagram.com/malspixelempire?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><button
+                type="button" class="button">INSTAGRAM</button></a>
+
         <div class="gallery" onclick="openLightbox(event)">
-            <img src="https://assets.codepen.io/210284/flower-6.jpg"
-                alt="Image 1">
-            <img src="https://assets.codepen.io/210284/flower-7.jpg"
-                alt="Image 2">
-            <img src="https://assets.codepen.io/210284/flower-8.jpg"
-                alt="Image 3">
-            <img src="https://assets.codepen.io/210284/flower-9.jpg"
-                alt="Image 4">
+            <img src="assets/images/gallery_photo_1.jpg" alt="Image 1">
+            <img src="assets/images/gallery_photo_2.jpg" alt="Image 2">
+            <img src="assets/images/gallery_photo_3.jpg" alt="Image 3">
+            <img src="assets/images/gallery_photo_4.jpg" alt="Image 4">
         </div>
-    
+
         <!-- Lightbox container -->
         <div id="lightbox">
             <!-- Close button -->
             <span id="close-btn" onclick="closeLightbox()">&times;</span>
-    
+
             <!-- Main lightbox image -->
             <img id="lightbox-img" src="" alt="lightbox image">
-    
+
             <!-- Thumbnails container -->
             <div id="thumbnail-container">
                 <!-- Thumbnails will be added dynamically using JavaScript -->
             </div>
-    
+
             <!-- Previous and Next buttons -->
             <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
             <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+            <script src="assets/lightbox.js"></script>
         </div>
     </main>
     <!-- <footer>
