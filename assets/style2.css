@@ -2,6 +2,11 @@ body {
     font-family: monospace;
 }
 
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
 .brutal-btn {
     background-color: white;
     border: 2px solid black;
@@ -15,16 +20,16 @@ body {
     height: 100px;
 }
 
-/* .brutal-btn:after {
+.brutal-btn:after {
     content: '';
     position: absolute;
-    background-color: green;
+    background-color: black;
     top: 8px;
     left: 8px;
     right: -8px;
     bottom: -8px;
     z-index: -1;
-} */
+}
 
 .brutal-btn:hover,
 brutalist-btn:active {
@@ -41,9 +46,9 @@ brutalist-btn:hover:active {
 }
 
 nav {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 footer {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 }
