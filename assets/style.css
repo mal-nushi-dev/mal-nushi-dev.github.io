@@ -64,19 +64,25 @@ footer {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: white; /* Adjust this color to fit your design */
+        background-color: white;
+        /* Adjust this color to fit your design */
         z-index: 9999;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center; /* Vertically center the content */
-        align-items: center;     /* Horizontally center the content */
+        justify-content: center;
+        /* Vertically center the content */
+        align-items: center;
+        /* Horizontally center the content */
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.5s linear, transform 0.5s ease;
         transform: translateY(-100%);
-        width: 100%;             /* Ensure it spans the full width */
-        height: 100vh;           /* Ensure it spans the full height of the viewport */
-        overflow-y: auto;        /* Allows scrolling if content is taller than the screen */
+        width: 100%;
+        /* Ensure it spans the full width */
+        height: 100vh;
+        /* Ensure it spans the full height of the viewport */
+        overflow-y: auto;
+        /* Allows scrolling if content is taller than the screen */
     }
 
     .navbar-collapse.collapsing {
@@ -91,21 +97,31 @@ footer {
 
     .navbar-nav {
         display: flex;
-        flex-direction: column; /* Stack the links vertically */
-        align-items: center;    /* Center links horizontally */
-        width: 100%;            /* Take full width of the container */
-        margin: 200px;              /* Reset any default margin */
-        padding: 0;             /* Reset any default padding */
+        flex-direction: column;
+        /* Stack the links vertically */
+        align-items: center;
+        /* Center links horizontally */
+        width: 100%;
+        /* Take full width of the container */
+        margin: 200px;
+        /* Reset any default margin */
+        padding: 0;
+        /* Reset any default padding */
     }
 
     .navbar-nav .nav-link {
-        padding: 15px;          /* Increased padding for better touch targets */
-        text-align: center;     /* Ensure text is centered within each link */
+        padding: 15px;
+        /* Increased padding for better touch targets */
+        text-align: center;
+        /* Ensure text is centered within each link */
         font-size: 20px;
-        width: 100%;            /* Each link spans the full width */
+        width: 100%;
+        /* Each link spans the full width */
         display: flex;
-        justify-content: center; /* Center text horizontally for each link */
-        align-items: center;     /* Center text vertically for each link */
+        justify-content: center;
+        /* Center text horizontally for each link */
+        align-items: center;
+        /* Center text vertically for each link */
     }
 
     .btn-close {
