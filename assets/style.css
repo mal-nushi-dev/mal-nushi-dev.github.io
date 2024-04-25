@@ -150,8 +150,6 @@ footer {
     }
 }
 
-
-
 /* Hide the close button on screens wider than 991px */
 @media (min-width: 992px) {
     .btn-close {
