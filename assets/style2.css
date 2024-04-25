@@ -67,36 +67,58 @@ footer {
         background-color: white; /* Adjust this color to fit your design */
         z-index: 9999;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        visibility: hidden; /* Start hidden */
+        flex-direction: column-reverse;
+        justify-content: center; /* Vertically center the content */
+        align-items: center;     /* Horizontally center the content */
+        visibility: hidden;
         opacity: 0;
-        transition: visibility 0s, opacity 0.5s linear; /* Smooth transition for opacity */
-        transform: translateY(-100%); /* Start above the view */
+        transition: visibility 0s, opacity 0.5s linear, transform 0.5s ease;
+        transform: translateY(-100%);
+        width: 100%;             /* Ensure it spans the full width */
+        height: 100vh;           /* Ensure it spans the full height of the viewport */
+        overflow-y: auto;        /* Allows scrolling if content is taller than the screen */
     }
 
     .navbar-collapse.collapsing {
-        transition: none; /* Disable transitions during the initial collapse */
+        transition: none;
     }
 
     .navbar-collapse.show {
         visibility: visible;
         opacity: 1;
-        transform: translateY(0); /* Move into view */
-        transition: opacity 0.1s linear, transform 0.5s ease; /* Smooth transition for both opacity and transform */
+        transform: translateY(0);
     }
 
     .navbar-nav {
-        flex-direction: column;
-        width: 100%;
+        display: flex;
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center;    /* Center links horizontally */
+        width: 100%;            /* Take full width of the container */
+        margin: 300px;              /* Reset any default margin */
+        padding: 0;             /* Reset any default padding */
     }
 
     .navbar-nav .nav-link {
-        padding: 10px;
-        text-align: center;
-        font-size: 20px; /* Adjust font size as needed */
+        padding: 15px;          /* Increased padding for better touch targets */
+        text-align: center;     /* Ensure text is centered within each link */
+        font-size: 20px;
+        width: 100%;            /* Each link spans the full width */
+        display: flex;
+        justify-content: center; /* Center text horizontally for each link */
+        align-items: center;     /* Center text vertically for each link */
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10001;
+        border: none;
+        background-color: transparent;
     }
 }
+
+
 
 /* Hide the close button on screens wider than 991px */
 @media (min-width: 992px) {
