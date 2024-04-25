@@ -148,6 +148,14 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .writing-unordered-list {
+        text-align: left;
+    }
+
+    .writing-list {
+        padding: 10px;
+    }
 }
 
 /* Hide the close button on screens wider than 991px */
