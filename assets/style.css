@@ -2,9 +2,20 @@ body {
     font-family: monospace;
 }
 
+main {
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
 a {
     text-align: center;
     text-decoration: none;
+}
+
+.img-fluid {
+    width: 400px;
+    border: 2px solid black;
+    margin: 20px;
 }
 
 .brutal-btn {
