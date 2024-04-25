@@ -94,7 +94,7 @@ footer {
         flex-direction: column; /* Stack the links vertically */
         align-items: center;    /* Center links horizontally */
         width: 100%;            /* Take full width of the container */
-        margin: 300px;              /* Reset any default margin */
+        margin: 200px;              /* Reset any default margin */
         padding: 0;             /* Reset any default padding */
     }
 
