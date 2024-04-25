@@ -143,6 +143,11 @@ footer {
         border: none;
         background-color: transparent;
     }
+
+    .about-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
