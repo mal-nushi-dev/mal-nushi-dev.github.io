@@ -8,6 +8,9 @@ a {
 }
 
 .brutal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     border: 2px solid black;
     padding: 10px 35px;
@@ -32,14 +35,14 @@ a {
 }
 
 .brutal-btn:hover,
-brutalist-btn:active {
+.brtual-btn:active {
     color: white;
     background-color: black;
     transition: all 0.3s ease;
 }
 
 .brutal-btn:hover:after,
-brutalist-btn:hover:active {
+.brtual-btn:hover:active {
     background-color: white;
     border: 2px solid black;
     transition: all 0.3s ease;
@@ -51,4 +54,53 @@ nav {
 
 footer {
     border-top: 2px solid black;
+}
+
+/* Ensures that the navigation bar takes up the full screen when toggled */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white; /* Adjust this color to fit your design */
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden; /* Start hidden */
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear; /* Smooth transition for opacity */
+        transform: translateY(-100%); /* Start above the view */
+    }
+
+    .navbar-collapse.collapsing {
+        transition: none; /* Disable transitions during the initial collapse */
+    }
+
+    .navbar-collapse.show {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0); /* Move into view */
+        transition: opacity 0.1s linear, transform 0.5s ease; /* Smooth transition for both opacity and transform */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        text-align: center;
+        font-size: 20px; /* Adjust font size as needed */
+    }
+}
+
+/* Hide the close button on screens wider than 991px */
+@media (min-width: 992px) {
+    .btn-close {
+        display: none;
+    }
 }
