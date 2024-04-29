@@ -1,4 +1,4 @@
-fetch('https://malnushi.com/assets/static_modules/navbar.html')
+fetch('https://malnushi.com/components/navbar/navbar.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
